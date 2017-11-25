@@ -1,0 +1,41 @@
+{
+  "name": "ng-rating-bar",
+  "version": "1.0.0",
+  "description": "Angular component for rating functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/* && npm run transpile-es5",
+    "transpile-es5": "ngc && gulp copy-package-json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jchinc/ng-rating-bar.git"
+  },
+  "keywords": [
+    "Rating Bar"
+  ],
+  "author": "JCHINC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jchinc/ng-rating-bar/issues"
+  },
+  "homepage": "https://github.com/jchinc/ng-rating-bar#readme",
+  "devDependencies": {
+    "@angular/compiler": "4.0.0",
+    "@angular/compiler-cli": "4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.8",
+    "del": "3.0.0",
+    "rimraf": "^2.6.2",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "@angular/common": "4.0.0",
+    "@angular/core": "4.0.0",
+    "rxjs": "^5.4.3",
+    "zone.js": "^0.8.18"
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "module": "es2015",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "noImplicitAny": true,
+        "declaration": true,
+        "target": "es5",
+        "outDir": "dist",
+        // Para incluir en la compilación ciertas funciones u operadores.
+        "lib": [
+            "es2015", // Map, Promise, ...
+            "dom" // Console, Node
+        ]
+    },
+    "files": [
+        "index.ts"
+    ],
+    "angularCompilerOptions": {
+        // Se requieren para compilación AOT en la implementación de la librería (cliente).
+        "strictMetadataEmit": true,
+        // Evita generar los archivos .ngfactory.ts
+        "skipTemplateCodegen": true,
+        // Evita generar los archivos .ngsummary.json
+        "enableSummariesForJit": false
+    }
+}
