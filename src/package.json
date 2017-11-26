@@ -1,11 +1,12 @@
 {
-    "name": "ng-rating-bar",
+    "name": "rating-bar",
     "version": "1.0.0",
     "description": "Angular component for rating functionality",
-    "main": "./bundles/index.umd.js",
+    "main": "./bundles/rating-bar.umd.js",
+    "typings":"./index.d.ts",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jchinc/ng-rating-bar.git"
+        "url": "git+https://github.com/jchinc/rating-bar.git"
     },
     "keywords": [
         "Rating Bar"
@@ -13,13 +14,11 @@
     "author": "JCHINC",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/jchinc/ng-rating-bar/issues"
+        "url": "https://github.com/jchinc/rating-bar/issues"
     },
-    "homepage": "https://github.com/jchinc/ng-rating-bar#readme",
+    "homepage": "https://github.com/jchinc/rating-bar#readme",
     "peerDependencies": {
-        "@angular/common": "4.0.0",
-        "@angular/core": "4.0.0",
-        "rxjs": "^5.4.3",
-        "zone.js": "^0.8.18"
+        "@angular/common": "^4.0.0 || ^5.0.0",
+        "@angular/core": "^4.0.0 || ^5.0.0"
     }
 }

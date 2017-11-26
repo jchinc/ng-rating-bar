@@ -1,17 +1,16 @@
 {
-  "name": "ng-rating-bar",
+  "name": "rating-bar",
   "version": "1.0.0",
   "description": "Angular component for rating functionality",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf dist/* && npm run transpile-es5 && npm run build-umd",
-    "transpile-es5": "ngc && gulp copy-package-json",
+    "build": "rimraf dist/* && npm run build-es5 && npm run build-umd",
+    "build-es5": "ngc && gulp copy-package-json",
     "build-umd": "rollup -c"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jchinc/ng-rating-bar.git"
+    "url": "git+https://github.com/jchinc/rating-bar.git"
   },
   "keywords": [
     "Rating Bar"
@@ -19,26 +18,24 @@
   "author": "JCHINC",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jchinc/ng-rating-bar/issues"
+    "url": "https://github.com/jchinc/rating-bar/issues"
   },
-  "homepage": "https://github.com/jchinc/ng-rating-bar#readme",
+  "homepage": "https://github.com/jchinc/rating-bar#readme",
   "devDependencies": {
-    "@angular/compiler": "4.0.0",
-    "@angular/compiler-cli": "4.0.0",
+    "@angular/compiler": "5.0.3",
+    "@angular/compiler-cli": "5.0.3",
     "del": "3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-util": "^3.0.8",
-    "rimraf": "^2.6.2",
-    "rollup": "^0.52.0",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "typescript": "^2.4.2"
+    "gulp": "3.9.1",
+    "gulp-load-plugins": "1.5.0",
+    "gulp-rename": "1.2.2",
+    "gulp-util": "3.0.8",
+    "rimraf": "2.6.2",
+    "rollup": "0.52.0",
+    "typescript": "2.4.2"
   },
   "dependencies": {
-    "@angular/common": "4.0.0",
-    "@angular/core": "4.0.0",
-    "rxjs": "^5.4.3",
-    "zone.js": "^0.8.18"
+    "@angular/core": "^4.0.0 || ^5.0.0",
+    "rxjs": "5.5.2",
+    "zone.js": "0.8.18"
   }
 }
