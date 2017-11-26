@@ -1,2 +1,2 @@
-# ng-rating-bar
+# rating-bar
 Angular component for rating functionality
