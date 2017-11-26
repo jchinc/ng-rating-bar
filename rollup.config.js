@@ -1,20 +1,18 @@
-import resolve from 'rollup-plugin-node-resolve';
-
 export default {
     input: 'dist/index.js',
     output: {
         file: 'dist/bundles/ng-rating-bar.umd.js',
-        name: 'ng.rating.bar',
+        name: 'ratingBar',
         format: 'umd',
         sourcemap: true,
+        // Librerías externas que se usan en la librería.
         globals: {
-            '@angular/core': 'ng.core',
-            'rxjs/Subject': 'Rx'
+            '@angular/core': 'ng.core'
         }
     },
-    plugins: [
-        resolve(
-            { modulesOnly: true}
-        )
+    // Para evitar que las librerías externas utilizadas se intenten compilar como parte de la librería.
+    // Considerarlos tal cual, como externas.
+    external: [
+        '@angular/core'
     ]
 }
