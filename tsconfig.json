@@ -12,7 +12,16 @@
         "lib": [
             "es2015", // Map, Promise, ...
             "dom" // Console, Node
-        ]
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "@angular/core": [
+                "node_modules/@angular/core"
+            ],
+            "rxjs/*": [
+                "node_modules/rxjs/*"
+            ]
+        }
     },
     "files": [
         "index.ts"
