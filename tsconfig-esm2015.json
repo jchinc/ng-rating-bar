@@ -1,26 +1,27 @@
 {
     "compilerOptions": {
-        "module": "es2015",
         "moduleResolution": "node",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "noImplicitAny": true,
         "declaration": true,
+        "module": "es2015",
         "target": "es2015",
-        "outDir": "./build/esm2015",
-        "baseUrl":"./build",
-        "rootDir": "./build",
+        "outDir": "./tmp/esm2015",
         "lib": [
             "es2015",
             "dom"
         ]
     },
     "files": [
-        "index.ts"
+        "./tmp/public_api.ts"
     ],
     "angularCompilerOptions": {
         "strictMetadataEmit": true,
         "skipTemplateCodegen": true,
-        "enableSummariesForJit": false
+        "enableSummariesForJit": false,
+        "flatModuleOutFile":"rating-bar.js",
+        "flatModuleId":"rating-bar",
+        "annotateForClosureCompiler":true
     }
 }

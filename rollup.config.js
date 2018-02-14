@@ -1,5 +1,5 @@
 export default {
-    input: 'dist/index.js',
+    input: 'build/index.js',
     output: {
         file: 'dist/bundles/ng-rating-bar.umd.js',
         name: 'ratingBar',

@@ -10,3 +10,27 @@ gulp.task('copy-package-json', () => {
         'src/package.json'
     ]).pipe(gulp.dest('dist/'));
 });
+
+gulp.task('copy-d-ts', () => {
+
+    gulp.src([
+        'build/**/*.*',
+        '!build/**/*.js'
+    ]).pipe(gulp.dest('dist/'));
+});
+
+gulp.task('copy-ts', () => {
+
+    gulp.src([
+        './*.ts',
+    ]).pipe(gulp.dest('./tmp'));
+});
+
+gulp.task('transpile-inline', () => {
+    gulp.src(['./src/**/*.ts'])
+        .pipe($.inlineNg2Template({
+            base: './src/',
+            useRelativePath: true
+        }))
+        .pipe(gulp.dest('./tmp/src'));
+})
